@@ -7,6 +7,9 @@ export default {
   darkMode:'class',
   theme: {
     extend: {
+      rotate: {
+        '17': '23deg',
+      },
       colors:{
         light:{
           primary: '#009FB7',
@@ -34,7 +37,8 @@ export default {
       },
       fontFamily:{
         jura: "'Jura', sans-serif",
-        epilogue: "'Epilogue', sans-serif"
+        epilogue: "'Epilogue', sans-serif",
+        righteous: "'Righteous', sans-serif"
       }
     },
   },
