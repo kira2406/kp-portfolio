@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { SiLeetcode } from "react-icons/si";
-import Kp_heart_red from './../assets/kp_heart_red.png';
-import Kp_heart_red_grey from './../assets/kp_heart_red_grey.png';
-import King_black_ai from './../assets/king_black_ai.png';
+import Kp_heart_red from "./../assets/kp_heart_red.png";
+import Kp_heart_red_grey from "./../assets/kp_heart_red_grey.png";
+import King_black_ai from "./../assets/king_black_ai.png";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
+
   return (
-    // <div id ="home" className="bg-gradient-to-b from-white from-20%  via-mintwhite via-50% to-[#A4F8EB] h-[85vh]">
     <div
       id="home"
       className="dark:bg-dark-background h-[85vh] bg-light-background"
@@ -42,7 +43,15 @@ const Home = () => {
                   Resume
                 </button>
                 <button className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mx-4">
-                  Projects
+                  <Link
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    Projects
+                  </Link>
                 </button>
               </div>
               <div className="grid grid-cols-3 pt-16 text-light-text dark:text-dark-text">
@@ -68,11 +77,22 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 p-4 text-light-text dark:text-dark-text">
-          <div className="relative h-screen flex justify-end items-center ml-40 mt-20" onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
-            
-          <img src={King_black_ai} alt="Description of image" className="absolute top-0 left-36 transform rotate-17  h-3/6 rounded-lg shadow-lg" />
-          <img src={isHovered? Kp_heart_red : Kp_heart_red_grey} alt="Description of image" className=" absolute top-20 left-0 transform -rotate-12 h-3/6 rounded-lg shadow-lg" />
-          </div>
+            <div
+              className="relative h-screen flex justify-end items-center ml-40 mt-20"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <img
+                src={King_black_ai}
+                alt="Description of image"
+                className="absolute top-0 left-36 transform rotate-17  h-3/6 rounded-lg shadow-lg"
+              />
+              <img
+                src={isHovered ? Kp_heart_red : Kp_heart_red_grey}
+                alt="Description of image"
+                className=" absolute top-20 left-0 transform -rotate-12 h-3/6 rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
