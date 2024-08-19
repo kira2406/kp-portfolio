@@ -30,7 +30,7 @@ export default {
         'primary':'#30DFC4',
         'darkblue':'#100842',
         'darkgreen':'#1D8676',
-        'lightgrey': '#6E7E85',
+        'lightblue': '#5ADBFF',
         'mintwhite':'#E6FDFF',
         'night':'#12130F',
         'ghostwhite':'#FFFAFF'

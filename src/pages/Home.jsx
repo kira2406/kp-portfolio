@@ -74,6 +74,7 @@ const Home = () => {
                   </span>
                 </div>
               </div>
+              <div className="font-jura text-light-text dark:text-dark-text">#CodeBlooded</div>
             </div>
           </div>
           <div className="w-1/2 p-4 text-light-text dark:text-dark-text">
