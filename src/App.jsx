@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Tech from "./pages/Tech";
+import { skills } from "./constants";
 
 export default function App() {
   const [theme, setTheme] = useState("light")
@@ -29,7 +30,7 @@ export default function App() {
     <Home />
     <About />
     <Projects />
-    <Tech />
+    <Tech skills={skills}/>
     <Contact />
     </div>
   )

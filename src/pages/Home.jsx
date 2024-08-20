@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="dark:bg-dark-background h-[85vh] bg-light-background"
+      className="dark:bg-dark-background  bg-light-background min-h-[85vh] h-[85vh]"
     >
       <div className="mx-80">
         <div className="flex gap-4">
@@ -42,7 +42,7 @@ const Home = () => {
                 <button className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mr-4">
                   Resume
                 </button>
-                <button className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mx-4">
+                
                   <Link
                     to="projects"
                     spy={true}
@@ -50,9 +50,10 @@ const Home = () => {
                     offset={-50}
                     duration={500}
                   >
+                    <button className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mx-4">
                     Projects
-                  </Link>
                 </button>
+                  </Link>
               </div>
               <div className="grid grid-cols-3 pt-16 text-light-text dark:text-dark-text">
                 <div className="flex items-center">
