@@ -18,9 +18,9 @@ const Tech = ({skills}) => {
               <h2 className='font-epilogue text-lg py-2 text-center text-light-secondary dark:text-dark-text'>{parentSkill.heading}</h2>
               {parentSkill.tech.map((skill, key)=>(
                 <Fragment key={key}>
-                  <div className={skill.logo?'grid grid-cols-2 py-2 place-items-center':'grid grid-cols-1 py-2 place-items-center'}>
-                    {skill.logo && <img src={skill.logo} className='h-8'/>}
-                    <p className='font-jura text-xl text-gray-400 text-center'>{skill.desc}</p>
+                  <div className={skill.logo?'grid grid-cols-2 py-2':'grid grid-cols-1 py-2 place-items-center'}>
+                    {skill.logo && <img src={skill.logo} className='h-8 place-self-center'/>}
+                    <p className={skill.logo?'font-jura text-xl text-gray-400':'font-jura text-xl text-gray-400 text-center'}>{skill.desc}</p>
                   </div>    
                 </Fragment>
               ))}

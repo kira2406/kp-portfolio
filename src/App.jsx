@@ -2,11 +2,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Tech from "./pages/Tech";
 import { skills } from "./constants";
+import Resume from "./assets/KP_Resume.pdf"
 
 export default function App() {
   const [theme, setTheme] = useState("light")
@@ -23,15 +23,24 @@ export default function App() {
     console.log("Getting triggered")
     setTheme(theme == "dark" ?  "light" : "dark")
   }
+
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = Resume;
+    link.download = 'Kushwanth_Parameshwaraiah_Resume.pdf'; // Set the name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   return (
     <div >
     <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme}/>
-    <Home />
+    <Home handleResumeDownload={handleResumeDownload}/>
     <About />
     <Projects />
     <Tech skills={skills}/>
-    <Contact />
+    <Contact handleResumeDownload={handleResumeDownload}/>
     </div>
   )
 }

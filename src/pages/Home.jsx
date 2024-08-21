@@ -7,8 +7,19 @@ import Kp_heart_red_grey from "./../assets/kp_heart_red_grey.png";
 import King_black_ai from "./../assets/king_black_ai.png";
 import { Link } from "react-scroll";
 
-const Home = () => {
+const Home = ({handleResumeDownload}) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/kushwanth-parameshwaraiah-6a176a1a4/', '_blank');
+  };
+  const handleGithub = () => {
+    window.open('https://github.com/kira2406', '_blank');
+  };
+
+  const handleLeetcode = () => {
+    window.open('https://leetcode.com/u/user6672xL/', '_blank');
+  };
 
   return (
     <div
@@ -39,7 +50,7 @@ const Home = () => {
                 <span className="font-bold">web developer</span>
               </div>
               <div className="pt-4">
-                <button className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mr-4">
+                <button onClick={handleResumeDownload} className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mr-4">
                   Resume
                 </button>
                 
@@ -56,19 +67,19 @@ const Home = () => {
                   </Link>
               </div>
               <div className="grid grid-cols-3 pt-16 text-light-text dark:text-dark-text">
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer" onClick={handleGithub}>
                   <FaGithub className="text-light-primary dark:text-dark-primary text-2xl" />
                   <span className="ml-2 font-jura font-semibold text-2xl">
                     Github
                   </span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer" onClick={handleLinkedIn}>
                   <FaLinkedin className="text-light-primary dark:text-dark-primary text-2xl" />
                   <span className="ml-2 font-jura font-semibold text-2xl">
                     LinkedIn
                   </span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer" onClick={handleLeetcode}>
                   <SiLeetcode className="text-light-primary dark:text-dark-primary text-2xl" />
                   <span className="ml-2 font-jura font-semibold text-2xl">
                     Leetcode
