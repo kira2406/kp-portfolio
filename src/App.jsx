@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Tech from "./pages/Tech";
-import { skills } from "./constants";
+import { projects, skills } from "./constants";
 import Resume from "./assets/KP_Resume.pdf"
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
     <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme}/>
     <Home handleResumeDownload={handleResumeDownload}/>
     <About />
-    <Projects />
+    <Projects projects={projects}/>
     <Tech skills={skills}/>
     <Contact handleResumeDownload={handleResumeDownload}/>
     </div>

@@ -17,6 +17,8 @@ import PostGreSQLLogo from "./../assets/postsql.png";
 import MySQLLogo from "./../assets/mysql.png";
 import MongoLogo from "./../assets/mongodb.png";
 import FirebaseLogo from "./../assets/firebase.jpg";
+import SKLearnLogo from "./../assets/sklearn.png"
+import PokereignsThumb from "./../assets/pokereigns.png"
 
 
 export const events = [
@@ -126,6 +128,10 @@ export const skills = [
         heading: "Tools",
         tech: [
             {
+                logo: SKLearnLogo,
+                desc:"Scikit-learn"
+            },
+            {
                 logo:PyTorchLogo,
                 desc:"PyTorch"
             },
@@ -189,4 +195,60 @@ export const skills = [
             }
         ]
     },
+]
+
+export const projects = [
+    {
+        title: "Norway Fisheries Species and Tools Recommendation System",
+        desc: ["Performed data cleaning and preprocessing on Norwegian fisheries dataset.", "Using the cleaned dataset, I trained machine learning models to predict the most possible species to be caught at a given region and the tools recommendation for it."],
+        deployedLink: "",
+        githubLink: "https://github.com/sridharahn/norway-fishing-MLModel",
+        tags: ["AIML", "ALL"],
+        tech: ["Pandas","Data cleaning", "Exploratory Data Analysis", "Scikit-learn", "Django"],
+        thumbnail: null
+    },
+    {
+        title: "Automated Parking System using Convoluted Neural Networks",
+        desc: ["Automated parking by storing registration plate data and timestamps using low-light enhancement algorithms for improved detection in low light.","Utilized the Faster R-CNN model for real-time detection from webcam input and integrated the model with a database system for collecting parking fees."],
+        deployedLink: "",
+        githubLink: null,
+        tags: ["AIML", "ALL"],
+        tech: ["Pandas","Tensorflow", "OpenCV", "Numpy", "Scikit-learn", "Django"],
+        thumbnail: null
+    },
+    {
+        title: "Formula-1 Database Management System",
+        desc: ["Successfully designed a comprehensive database system to store data related to Olympic events demonstrating the use of normalisation rules",
+            "Employed stored procedures to automatically update country wise medal tally and the main table when a new competition data was added to the database"],
+        deployedLink: "",
+        githubLink: "https://github.com/kira2406/f1_dbms",
+        tags: ["FS", "ALL"],
+        tech: ["SQL","PostgreSQL", "React", "Node.js"],
+        thumbnail: null
+
+    },
+    {
+        title: "An RPG Game: PokeReigns",
+        desc: ["Developed an online role-playing game inspired by the popular anime Pokemon.", "Enables users to capture and train Pokemons through battles with wild Pokemons and/or other trainers", 
+              "Leveraged Google’s Firebase for managing authentication and storing users' data as it provides an identity platform and in-built UI libraries to authenticate the user in the application securely"
+        ],
+        deployedLink: "https://pokereigns.web.app/",
+        githubLink: "https://github.com/kira2406/PokeReigns",
+        tags: ["FS", "ALL"],
+        tech: ["MongoDB","Firebase", "React", "Node.js"],
+        thumbnail: PokereignsThumb
+
+    },
+    {
+        title: "Olympics Database Management System",
+        desc: ["Successfully designed a comprehensive database system to store data related to Olympic events demonstrating the use of normalisation rules", 
+              "Employed stored procedures to automatically update country wise medal tally and the main table when a new competition data was added to the database"
+        ],
+        deployedLink: "",
+        githubLink: null,
+        tags: ["FS", "ALL"],
+        tech: ["SQL","MySQL Workbench", "React", "Node.js"],
+        thumbnail: null
+
+    }
 ]

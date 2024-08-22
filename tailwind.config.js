@@ -16,7 +16,8 @@ export default {
           secondary:'#0D3B66',
           background: '#F4F4F8',
           text: '#242038',
-          gray: '#6E7E85'
+          gray: '#6E7E85',
+          red: '#4CB963'
 
         },
         dark:{

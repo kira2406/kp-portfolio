@@ -18,7 +18,7 @@ const Home = ({handleResumeDownload}) => {
   };
 
   const handleLeetcode = () => {
-    window.open('https://leetcode.com/u/user6672xL/', '_blank');
+    window.open('https://leetcode.com/u/kira2402/', '_blank');
   };
 
   return (

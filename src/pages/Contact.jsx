@@ -24,7 +24,7 @@ const Contact = ({ handleResumeDownload }) => {
   };
 
   const handleLeetcode = () => {
-    window.open("https://leetcode.com/u/user6672xL/", "_blank");
+    window.open("https://leetcode.com/u/kira2402/", "_blank");
   };
   const handleInstagram = () => {
     window.open("https://www.instagram.com/kush._.gowda_/", "_blank");
