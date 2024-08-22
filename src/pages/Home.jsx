@@ -6,6 +6,7 @@ import Kp_heart_red from "./../assets/kp_heart_red.png";
 import Kp_heart_red_grey from "./../assets/kp_heart_red_grey.png";
 import King_black_ai from "./../assets/king_black_ai.png";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion"
 
 const Home = ({handleResumeDownload}) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -34,14 +35,14 @@ const Home = ({handleResumeDownload}) => {
               <div className="m-0 font-jura text-3xl pb-3 text-light-text dark:text-dark-text">
                 Hi, I'm
               </div>
-              <div className=" m-0 font-righteous text-6xl font-bold tracking-wider">
+              <motion.div initial={{x:-150, opacity:0}} animate={{x:0, opacity:1}} className=" m-0 font-righteous text-6xl font-bold tracking-wider">
                 <span className="text-light-primary dark:text-dark-primary">
                   Kush
                 </span>
                 <span className="text-light-gray dark:text-dark-gray">
                   wanth
                 </span>
-              </div>
+              </motion.div>
               <div className="text-light-gray dark:text-dark-gray m-0 font-righteous text-6xl font-bold tracking-wider">
                 Parameshwaraiah
               </div>
