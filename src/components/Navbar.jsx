@@ -8,7 +8,7 @@ import { delay, motion } from "framer-motion"
 const Navbar = ({ handleThemeSwitch, theme }) => {
   return (
     <div className="flex items-center justify-end py-12 mx-44 bg-light-background dark:bg-dark-background">
-      <motion.div initial={{x:-100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.4,delay: 4}} className="flex items-center justify-center gap-9 text-2xl font-jura tracking-tighter">
+      <motion.div initial={{y:-100, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.6,delay: 4}} className="flex items-center justify-center gap-9 text-2xl font-jura tracking-tighter">
         <Link
           to="hero"
           spy={true}
