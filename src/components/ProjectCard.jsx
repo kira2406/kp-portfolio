@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="bg-light-secondary p-8 grid grid-cols-[2fr_10fr]">
+    <div className="bg-light-secondary p-8 grid grid-cols-[2fr_10fr] hover:shadow-xl hover:-translate-y-2 duration-300 rounded-xl transform transition-all">
       {thumbnail ? <img src={thumbnail} className="pr-4"/>: <div></div>}
       <div>
         <div className="grid grid-cols-[10fr_2fr]"><h1 className="text-light-background text-2xl font-righteous pb-4">

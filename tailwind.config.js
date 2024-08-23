@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       rotate: {
-        '17': '23deg',
+        '23': '23deg',
       },
       colors:{
         light:{

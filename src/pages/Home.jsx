@@ -25,17 +25,17 @@ const Home = ({handleResumeDownload}) => {
   return (
     <div
       id="home"
-      className="dark:bg-dark-background  bg-light-background min-h-[85vh] h-[85vh]"
+      className="dark:bg-dark-background  bg-light-background min-h-[85vh] h-[85vh] overflow-x-hidden overflow-y-hidden"
     >
       <div className="mx-80">
         <div className="flex gap-4">
           <div className="w-1/2 p-4 h-screen">
             <div className="h-12"></div>
-            <div className="border-l-[14px] border-light-primary dark:border-dark-primary pl-4 h-max">
-              <div className="m-0 font-jura text-3xl pb-3 text-light-text dark:text-dark-text">
+            <motion.div className="border-l-[14px] border-light-primary dark:border-dark-primary pl-4 h-max " initial={{y:-150, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.5, delay:1}}>
+              <motion.div initial={{x:-150, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:1.2}} className="m-0 font-jura text-3xl pb-3 text-light-text dark:text-dark-text">
                 Hi, I'm
-              </div>
-              <motion.div initial={{x:-150, opacity:0}} animate={{x:0, opacity:1}} className=" m-0 font-righteous text-6xl font-bold tracking-wider">
+              </motion.div>
+              <motion.div initial={{x:-50, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:2}} className=" m-0 font-righteous text-6xl font-bold tracking-wider">
                 <span className="text-light-primary dark:text-dark-primary">
                   Kush
                 </span>
@@ -43,14 +43,14 @@ const Home = ({handleResumeDownload}) => {
                   wanth
                 </span>
               </motion.div>
-              <div className="text-light-gray dark:text-dark-gray m-0 font-righteous text-6xl font-bold tracking-wider">
+              <motion.div initial={{x:-50, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:2.5}} className="text-light-gray dark:text-dark-gray m-0 font-righteous text-6xl font-bold tracking-wider">
                 Parameshwaraiah
-              </div>
-              <div className="m-0 font-jura text-3xl text-light-text dark:text-dark-text">
+              </motion.div>
+              <motion.div initial={{y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.5, delay:3}} className="m-0 font-jura text-3xl text-light-text dark:text-dark-text">
                 <span className="font-bold">AI/ML enthusiast</span> and{" "}
                 <span className="font-bold">web developer</span>
-              </div>
-              <div className="pt-4">
+              </motion.div>
+              <motion.div className="pt-4" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4}}>
                 <button onClick={handleResumeDownload} className="bg-light-secondary dark:bg-dark-secondary rounded text-dark-text dark:text-dark-text font-bold py-3 px-11 font-jura text-2xl mr-4">
                   Resume
                 </button>
@@ -66,8 +66,8 @@ const Home = ({handleResumeDownload}) => {
                     Projects
                 </button>
                   </Link>
-              </div>
-              <div className="grid grid-cols-3 pt-16 text-light-text dark:text-dark-text">
+              </motion.div>
+              <motion.div className="grid grid-cols-3 pt-16 text-light-text dark:text-dark-text"initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4}}>
                 <div className="flex items-center cursor-pointer" onClick={handleGithub}>
                   <FaGithub className="text-light-primary dark:text-dark-primary text-2xl" />
                   <span className="ml-2 font-jura font-semibold text-2xl">
@@ -86,9 +86,9 @@ const Home = ({handleResumeDownload}) => {
                     Leetcode
                   </span>
                 </div>
-              </div>
-              <div className="font-jura text-light-text dark:text-dark-text">#CodeBlooded</div>
-            </div>
+              </motion.div>
+              <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:4}} className="font-jura text-light-text dark:text-dark-text">#CodeBlooded</motion.div>
+            </motion.div>
           </div>
           <div className="w-1/2 p-4 text-light-text dark:text-dark-text">
             <div
@@ -96,15 +96,21 @@ const Home = ({handleResumeDownload}) => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <img
+              <motion.img
+                initial={{opacity:0,x:300,y:300, rotate:0, scaleX:1.5, scaleY:1.5}}
+                animate={{opacity:1,x:0, y:0, rotate: 23, scaleX:1, scaleY:1}}
+                transition={{duration:0.2, delay:5}}
                 src={King_black_ai}
                 alt="Description of image"
-                className="absolute top-0 left-36 transform rotate-17  h-3/6 rounded-lg shadow-lg"
+                className="absolute top-0 left-36 transform rotate-23  h-3/6 rounded-lg shadow-xl"
               />
-              <img
+              <motion.img
+                initial={{opacity:0,x:300,y:300,rotate:0, scaleX:1.5, scaleY:1.5}}
+                animate={{opacity:1,x:0, y:0,rotate:-12, scaleX:1, scaleY:1}}
+                transition={{duration:0.2, delay:5.5}}
                 src={isHovered ? Kp_heart_red : Kp_heart_red_grey}
                 alt="Description of image"
-                className=" absolute top-20 left-0 transform -rotate-12 h-3/6 rounded-lg shadow-lg"
+                className=" absolute top-20 left-0 transform -rotate-12 h-3/6 rounded-lg shadow-xl"
               />
             </div>
           </div>

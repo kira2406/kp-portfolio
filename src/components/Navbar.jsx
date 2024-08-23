@@ -3,18 +3,19 @@ import { FaSun } from "react-icons/fa6";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 // import { Link, NavLink } from "react-router-dom"
 import { Link } from "react-scroll";
+import { delay, motion } from "framer-motion"
 
 const Navbar = ({ handleThemeSwitch, theme }) => {
   return (
     <div className="flex items-center justify-end py-12 mx-44 bg-light-background dark:bg-dark-background">
-      <div className="flex items-center justify-center gap-9 text-2xl font-jura tracking-tighter">
+      <motion.div initial={{x:-100, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.4,delay: 4}} className="flex items-center justify-center gap-9 text-2xl font-jura tracking-tighter">
         <Link
           to="hero"
           spy={true}
           smooth={true}
           offset={50}
           duration={500}
-          className="text-2xl active "
+          className="text-2xl active cursor-pointer"
         >
           Home
         </Link>
@@ -24,7 +25,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="text-2xl text-light-text dark:text-dark-text"
+          className="text-2xl text-light-text dark:text-dark-text cursor-pointer"
         >
           About Me
         </Link>
@@ -34,7 +35,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="text-2xl text-light-text dark:text-dark-text"
+          className="text-2xl text-light-text dark:text-dark-text cursor-pointer"
         >
           Projects
         </Link>
@@ -44,7 +45,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           smooth={true}
           offset={-100}
           duration={500}
-          className="text-2xl text-light-text dark:text-dark-text "
+          className="text-2xl text-light-text dark:text-dark-text cursor-pointer"
         >
           Contact Me
         </Link>
@@ -64,7 +65,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
             </>
           )}
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };
