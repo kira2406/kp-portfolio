@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { motion } from "framer-motion";
 
 
 const Timeline = ({events}) => {
@@ -7,7 +8,7 @@ const Timeline = ({events}) => {
         <Circle />
         {events.map((event, key) => (
             <Fragment key={key}>
-                <div className='grid grid-cols-[auto_1fr] gap-x-2 items-center ml-auto'>
+                <motion.div initial={{opacity:0, x:100}} whileInView={{opacity:1, x:0}} transition={{duration: 0.5}}  className='grid grid-cols-[auto_1fr] gap-x-2 items-center ml-auto'>
                     {event.direction == "left"?(
                         <LeftEventCard heading={event.heading} year={event.year} course={event.course} logo={event.logo} description={event.description}/>)
                         :
@@ -18,7 +19,7 @@ const Timeline = ({events}) => {
                         :
                         (<div></div>)
                     } */}
-                </div>
+                </motion.div>
             </Fragment>
         ))}
         <Circle />
@@ -28,7 +29,7 @@ const Timeline = ({events}) => {
 }
 
 const Circle = () => {
-    return (<div className=' w-3 h-3 bg-light-primary ml-auto '></div>)
+    return (<motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} transition={{duration: 0.5}} className=' w-3 h-3 bg-light-primary ml-auto '></motion.div>)
 }
 
 const Pillar = () => {
