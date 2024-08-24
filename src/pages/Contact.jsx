@@ -41,8 +41,8 @@ const Contact = ({ handleResumeDownload }) => {
       id="contact"
       className="bg-light-secondary dark:bg-dark-secondary py-8"
     >
-      <div className="mx-4 md:mx-16 lg:mx-80 min-h-full py-8">
-        <div className="flex gap-4 p-4">
+      <div className="mx-4 md:mx-16 lg:mx-80 min-h-full py-4 md:py-6 lg:py-8">
+        <div className="flex gap-4 px-4 py-2 md:p-4">
           <div className="border-l-[14px] border-light-primary p-4 text-light-background text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
             REACH OUT TO ME
           </div>

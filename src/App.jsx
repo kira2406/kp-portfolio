@@ -34,7 +34,7 @@ export default function App() {
   };
   
   return (
-    <div >
+    <div className="max-w-full overflow-x-hidden">
     <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme}/>
     <Home handleResumeDownload={handleResumeDownload}/>
     <About />
