@@ -1,6 +1,7 @@
 import React from "react";
 import Timeline from "../components/Timeline";
 import { events } from "../constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex gap-4 py-8">
-          <div className="w-6/12 p-4 h-full">
+          <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration: 0.5}} className="w-6/12 p-4 h-full">
             <p className="text-xl font-jura text-light-background text-justify mb-4">
               I'm Kushwanth Parameshwaraiah, a graduate student from SUNY
               Buffalo with a deep understanding of machine learning and AI.
@@ -29,7 +30,7 @@ const About = () => {
             <p className="text-xl font-jura text-light-background text-justify mb-4">
             Outside of coding, I enjoy gaming on my PC and playing card games such as poker and Uno. I’m excited to connect with industry professionals and seek out new opportunities in the tech industry.
             </p>
-          </div>
+          </motion.div>
           <div className="w-6/12 px-4 h-full">
             <Timeline events={events} />
           </div>
