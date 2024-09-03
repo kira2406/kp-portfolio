@@ -199,6 +199,15 @@ export const skills = [
 
 export const projects = [
     {
+        title: "Image Super Resolution",
+        desc: ["Implemented CNN and GAN from scratch for improving the quality of pixelated, low quality images."],
+        deployedLink: "https://kira2406-imagesuperres-esrgan-app-szstbp.streamlit.app/",
+        githubLink: "https://github.com/kira2406/Image-Quality-Enhancement",
+        tags: ["AIML", "ALL"],
+        tech: ["Pandas","Deep Learning", "GAN", "CNN", "Streamlit"],
+        thumbnail: null
+    },
+    {
         title: "Norway Fisheries Species and Tools Recommendation System",
         desc: ["Performed data cleaning and preprocessing on Norwegian fisheries dataset.", "Using the cleaned dataset, I trained machine learning models to predict the most possible species to be caught at a given region and the tools recommendation for it."],
         deployedLink: "",
@@ -218,8 +227,8 @@ export const projects = [
     },
     {
         title: "Formula-1 Database Management System",
-        desc: ["Successfully designed a comprehensive database system to store data related to Olympic events demonstrating the use of normalisation rules",
-            "Employed stored procedures to automatically update country wise medal tally and the main table when a new competition data was added to the database"],
+        desc: ["Designed a detailed database system to manage data for Formula 1 events, ensuring BCNF normalization.",
+            "Developed stored procedures to automatically refresh team standings and driver standings table whenever new race data was entered into the database."],
         deployedLink: "",
         githubLink: "https://github.com/kira2406/f1_dbms",
         tags: ["FS", "ALL"],
