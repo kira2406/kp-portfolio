@@ -15,7 +15,7 @@ import { SiHandshake, SiLeetcode } from "react-icons/si";
 const Contact = ({ handleResumeDownload }) => {
   const handleLinkedIn = () => {
     window.open(
-      "https://www.linkedin.com/in/kushwanth-parameshwaraiah-6a176a1a4/",
+      "https://www.linkedin.com/in/kushwanth-p",
       "_blank"
     );
   };
