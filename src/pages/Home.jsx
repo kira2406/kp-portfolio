@@ -12,7 +12,7 @@ const Home = ({handleResumeDownload}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleLinkedIn = () => {
-    window.open('https://www.linkedin.com/in/kushwanth-parameshwaraiah-6a176a1a4/', '_blank');
+    window.open('https://www.linkedin.com/in/kushwanth-p', '_blank');
   };
   const handleGithub = () => {
     window.open('https://github.com/kira2406', '_blank');
