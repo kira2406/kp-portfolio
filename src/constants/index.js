@@ -205,7 +205,7 @@ export const projects = [
             "Deployed the platform on AWS with the frontend hosted on Vercel for fast, scalable performance."],
         deployedLink: "",
         githubLink: "https://github.com/kira2406/kratos-digital-store",
-        tags: ["AIML", "ALL"],
+        tags: ["AIML", "FS", "ALL"],
         tech: ["ETL Pipeline","Apache Airflow","MLFlow", "React", "Scikit-learn", "Numpy", "Pandas", "AWS", "LSTM"],
         thumbnail: null
     },
@@ -214,7 +214,7 @@ export const projects = [
         desc: ["Implemented CNN and GAN from scratch for improving the quality of pixelated, low quality images."],
         deployedLink: "https://kira2406-imagesuperres-esrgan-app-szstbp.streamlit.app/",
         githubLink: "https://github.com/kira2406/Image-Quality-Enhancement",
-        tags: ["AIML", "FS", "ALL"],
+        tags: ["AIML", "ALL"],
         tech: ["Pandas","Deep Learning", "GAN", "CNN", "Streamlit"],
         thumbnail: null
     },

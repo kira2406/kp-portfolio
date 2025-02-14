@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
         )}
         <div className="pt-4 flex flex-wrap">
           {techs.map((tech, key) => (
-            <span className="px-3 md:px-4 mr-2 md:mr-4 bg-lightblue rounded-lg md:rounded-xl font-jura text-sm md:text-base" key={key}>
+            <span className="px-3 md:px-4 mr-2 mb-2 md:mr-4 mb-4 bg-lightblue rounded-lg md:rounded-xl font-jura text-sm md:text-base" key={key}>
               {tech}
             </span>
           ))}
