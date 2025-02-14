@@ -199,11 +199,22 @@ export const skills = [
 
 export const projects = [
     {
+        title: "Kratos Digital Store",
+        desc: ["Designed and developed an e-commerce website tailored for the sale of PC games.",
+            "Developed an automated sales forecasting system using LSTM models, saved the model weights on AWS S3 buckets.",
+            "Deployed the platform on AWS with the frontend hosted on Vercel for fast, scalable performance."],
+        deployedLink: "",
+        githubLink: "https://github.com/kira2406/kratos-digital-store",
+        tags: ["AIML", "ALL"],
+        tech: ["ETL Pipeline","Apache Airflow","MLFlow", "React", "Scikit-learn", "Numpy", "Pandas", "AWS", "LSTM"],
+        thumbnail: null
+    },
+    {
         title: "Image Super Resolution",
         desc: ["Implemented CNN and GAN from scratch for improving the quality of pixelated, low quality images."],
         deployedLink: "https://kira2406-imagesuperres-esrgan-app-szstbp.streamlit.app/",
         githubLink: "https://github.com/kira2406/Image-Quality-Enhancement",
-        tags: ["AIML", "ALL"],
+        tags: ["AIML", "FS", "ALL"],
         tech: ["Pandas","Deep Learning", "GAN", "CNN", "Streamlit"],
         thumbnail: null
     },
