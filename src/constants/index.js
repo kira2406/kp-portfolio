@@ -19,6 +19,7 @@ import MongoLogo from "./../assets/mongodb.png";
 import FirebaseLogo from "./../assets/firebase.jpg";
 import SKLearnLogo from "./../assets/sklearn.png"
 import PokereignsThumb from "./../assets/pokereigns.png"
+import AirflowLogo from "./../assets/airflow.png"
 
 
 export const events = [
@@ -150,6 +151,10 @@ export const skills = [
             {
                 logo: MLFlowLogo,
                 desc:"MLflow"
+            },
+            {
+                logo: AirflowLogo,
+                desc: "Airflow"
             }
         ]
     },
