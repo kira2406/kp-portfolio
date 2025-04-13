@@ -27,7 +27,7 @@ const Contact = ({ handleResumeDownload }) => {
     window.open("https://leetcode.com/u/kira2402/", "_blank");
   };
   const handleInstagram = () => {
-    window.open("https://www.instagram.com/kush._.gowda_/", "_blank");
+    window.open("https://www.instagram.com/echoes_of_k/", "_blank");
   };
   const handleHandshake = () => {
     window.open(
@@ -126,7 +126,7 @@ const Contact = ({ handleResumeDownload }) => {
                   onClick={handleInstagram}
                 >
                   <FaInstagram className="w-5 h-5 md:w-6 md:h-6 text-light-primary mr-2 md:mr-3" />
-                  <span className="text-base md:text-lg font-jura">kush._.gowda_</span>
+                  <span className="text-base md:text-lg font-jura">echoes_of_k</span>
                 </div>
                 <div
                 className="flex items-center mb-4 cursor-pointer"

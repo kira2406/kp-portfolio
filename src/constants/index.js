@@ -21,6 +21,7 @@ import SKLearnLogo from "./../assets/sklearn.png"
 import PokereignsThumb from "./../assets/pokereigns.png"
 import AirflowLogo from "./../assets/airflow.png"
 
+export * from './projectDetails'
 
 export const events = [
     {
@@ -208,19 +209,65 @@ export const projects = [
         desc: ["Designed and developed an e-commerce website tailored for the sale of PC games.",
             "Developed an automated sales forecasting system using LSTM models, saved the model weights on AWS S3 buckets.",
             "Deployed the platform on AWS with the frontend hosted on Vercel for fast, scalable performance."],
-        deployedLink: "",
+        deployedLink: "https://kratos-digital-store-28zjh2rat.vercel.app/",
         githubLink: "https://github.com/kira2406/kratos-digital-store",
         tags: ["AIML", "FS", "ALL"],
-        tech: ["ETL Pipeline","Apache Airflow","MLFlow", "React", "Scikit-learn", "Numpy", "Pandas", "AWS", "LSTM"],
+        tech: [
+            "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+            "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+            "https://img.shields.io/badge/etl_pipeline-20232A?style=for-the-badge",
+            "https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white",
+            "https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white",
+            "https://img.shields.io/badge/mlflow-FFFFFF?style=for-the-badge&logo=mlflow&logoColor=017CEE",
+            "https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white",
+            "https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white",
+            "https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white",
+            "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+            "https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white",
+            "https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white",
+            "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white",
+            "https://img.shields.io/badge/Redux%20saga-86D46B?style=for-the-badge&logo=redux%20saga&logoColor=999999",
+            "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white",
+            "https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white",
+            "https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white",
+            "https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white",
+            "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white",
+            "https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white",
+        ],
         thumbnail: null
     },
+    {
+        title: "Autoencoders for Anomaly Detection in Amazon EC2 CPU latency",
+        desc: [
+          "Developed a deep autoencoder-based anomaly detection system for identifying CPU latency of an Amazon EC2 instance during system failure from the Numenta Anomaly Benchmark.",
+          "Achieved 99% detection accuracy by leveraging reconstruction error to identify subtle deviations in input patterns.",
+          "Conducted performance benchmarking across LSTM, BiLSTM and Stacked LSTM encoder variants, comparing precision, recall and inference latency to select the most effective model.",
+          "Integrated Neptune.ai for real-time experiment tracking, hyperparameter logging and visualizing reconstruction loss."
+        ],
+        tags: ["AIML", "FS", "ALL"],
+        tech: [
+            "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+            "https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white",
+            "https://img.shields.io/badge/Deep_Learning-20232A?style=for-the-badge",
+            "https://img.shields.io/badge/Neptune.ai-5B69C2?style=for-the-badge&logo=neptune&logoColor=white"]
+        ,
+        githubLink: "https://github.com/kira2406/kratos-digital-store",
+        deployedLink: "",
+        thumbnail: null,
+        viewDetails: "anomaly-detection-autoencoders"
+        
+      },
     {
         title: "Image Super Resolution",
         desc: ["Implemented CNN and GAN from scratch for improving the quality of pixelated, low quality images."],
         deployedLink: "https://kira2406-imagesuperres-esrgan-app-szstbp.streamlit.app/",
         githubLink: "https://github.com/kira2406/Image-Quality-Enhancement",
         tags: ["AIML", "ALL"],
-        tech: ["Pandas","Deep Learning", "GAN", "CNN", "Streamlit"],
+        tech: ["https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+            "https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white",
+            "https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"],
         thumbnail: null
     },
     {
@@ -229,7 +276,15 @@ export const projects = [
         deployedLink: "",
         githubLink: "https://github.com/sridharahn/norway-fishing-MLModel",
         tags: ["AIML", "ALL"],
-        tech: ["Pandas","Data cleaning", "Exploratory Data Analysis", "Scikit-learn", "Django"],
+        tech: [
+            "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+            "https://img.shields.io/badge/Data_Cleaning-black?style=for-the-badge",
+            "https://img.shields.io/badge/Exploratory_Data_Analysis-193ca2?style=for-the-badge",
+            "https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white",
+            "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green",
+            "https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white",
+            "https://img.shields.io/badge/pandas-08085e?style=for-the-badge&logo=pandas&logoColor=FFFFFF"
+        ],
         thumbnail: null
     },
     {
@@ -238,7 +293,14 @@ export const projects = [
         deployedLink: "",
         githubLink: null,
         tags: ["AIML", "ALL"],
-        tech: ["Pandas","Tensorflow", "OpenCV", "Numpy", "Scikit-learn", "Django"],
+        tech: [
+            "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
+            "https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white",
+            "https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white",
+            "https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white",
+            "https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white",
+            "https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white",
+            "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green"],
         thumbnail: null
     },
     {
@@ -248,7 +310,13 @@ export const projects = [
         deployedLink: "",
         githubLink: "https://github.com/kira2406/f1_dbms",
         tags: ["FS", "ALL"],
-        tech: ["SQL","PostgreSQL", "React", "Node.js"],
+        tech: [
+            "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white",
+            "https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+            "https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"
+        ],
         thumbnail: null
 
     },
@@ -260,7 +328,13 @@ export const projects = [
         deployedLink: "https://pokereigns.web.app/",
         githubLink: "https://github.com/kira2406/PokeReigns",
         tags: ["FS", "ALL"],
-        tech: ["MongoDB","Firebase", "React", "Node.js"],
+        tech: [
+            "https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white",
+            "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+            "https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"
+        ],
         thumbnail: PokereignsThumb
 
     },
@@ -272,7 +346,13 @@ export const projects = [
         deployedLink: "",
         githubLink: null,
         tags: ["FS", "ALL"],
-        tech: ["SQL","MySQL Workbench", "React", "Node.js"],
+        tech: [
+            "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white",
+            "https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white",
+            "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white",
+            "https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"
+        ],
         thumbnail: null
 
     }

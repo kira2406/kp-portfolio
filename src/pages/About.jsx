@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="bg-light-secondary dark:bg-dark-secondary py-8 min-h-screen h-full overflow-x-hidden">
+    <section id="about" className="bg-light-secondary dark:bg-dark-secondary py-8 min-h-screen h-full overflow-x-hidden">
       <div className="mx-4 md:mx-16 lg:mx-80 py-4 md:py-6 lg:py-8">
         <div className="flex gap-4 px-4 py-2 md:p-4">
           <div className="border-l-[14px] border-light-primary p-4 text-white text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
@@ -13,7 +13,12 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 py-4 md:py-6 lg:py-8">
-          <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration: 0.5}} className="w-full md:w-6/12 p-4 h-full">
+          <motion.div 
+          initial={{opacity:0, x:-100}} 
+          whileInView={{opacity:1, x:0}} 
+          transition={{duration: 0.5}}
+          viewport={{ once: true }} 
+          className="w-full md:w-6/12 p-4 h-full">
             <p className="text-base md:text-xl font-jura text-light-background text-justify mb-4">
               I'm Kushwanth Parameshwaraiah, a graduate student from SUNY
               Buffalo with a deep understanding of machine learning and AI.
@@ -36,7 +41,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
