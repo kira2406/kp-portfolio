@@ -209,7 +209,7 @@ export const projects = [
         desc: ["Designed and developed an e-commerce website tailored for the sale of PC games.",
             "Developed an automated sales forecasting system using LSTM models, saved the model weights on AWS S3 buckets.",
             "Deployed the platform on AWS with the frontend hosted on Vercel for fast, scalable performance."],
-        deployedLink: "https://kratos-digital-store-28zjh2rat.vercel.app/",
+        deployedLink: "https://kratos-digital-store.vercel.app/",
         githubLink: "https://github.com/kira2406/kratos-digital-store",
         tags: ["AIML", "FS", "ALL"],
         tech: [
@@ -253,7 +253,7 @@ export const projects = [
             "https://img.shields.io/badge/Deep_Learning-20232A?style=for-the-badge",
             "https://img.shields.io/badge/Neptune.ai-5B69C2?style=for-the-badge&logo=neptune&logoColor=white"]
         ,
-        githubLink: "https://github.com/kira2406/kratos-digital-store",
+        githubLink: "https://github.com/kira2406/anomaly_detection_autoencoders",
         deployedLink: "",
         thumbnail: null,
         viewDetails: "anomaly-detection-autoencoders"
