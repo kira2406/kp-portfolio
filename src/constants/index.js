@@ -20,13 +20,31 @@ import FirebaseLogo from "./../assets/firebase.jpg";
 import SKLearnLogo from "./../assets/sklearn.png"
 import PokereignsThumb from "./../assets/pokereigns.png"
 import AirflowLogo from "./../assets/airflow.png"
+import JPMCLogo from "./../assets/jpmc_logo.jpeg"
+import DellLogo from "./../assets/dell_logo.jpeg"
 
 export * from './projectDetails'
 
 export const events = [
     {
+        heading: "JP Morgan Chase & Co.",
+        year: "Jul 2024 - Present",
+        course: "Full Stack Developer",
+        description: "Spearheaded the development of a cloud-native Trade Surveillance System by designing distributed microservices.",
+        logo: JPMCLogo,
+        direction: "left"
+    },
+    {
+        heading: "JP Morgan Chase & Co.",
+        year: "Sep 2024 - Jun 2025",
+        course: "Full Stack Developer Intern",
+        description: "Contributed to the Athena Cloud Platform Migration project using AWS and Kubernetes",
+        logo: JPMCLogo,
+        direction: "left"
+    },
+    {
         heading: "SUNY Buffalo, New York",
-        year: "2024 - Present",
+        year: "Jan 2024 - Jul 2025",
         course: "MS in Computer Science",
         description: "AI/ML Track",
         logo: UBLogo,
@@ -34,10 +52,18 @@ export const events = [
     },
     {
         heading: "Cognizant Technology Solutions",
-        year: "2021 - 2024",
-        course: "Business Analyst, React Developer",
+        year: "Aug 2021 - Jan 2024",
+        course: "Software Engineer",
         description: "Utilized React and Redux to build dynamic web applications. Implemented lazy loading to enhance performance and user experience",
         logo: CTSLogo,
+        direction: "left"
+    },
+    {
+        heading: "Dell Technologies",
+        year: "Jan 2020 - Jul 2021",
+        course: "Business Analyst, React Developer",
+        description: "Architected the Product Lifecycle Management Tool from the ground up.",
+        logo: DellLogo,
         direction: "left"
     },
     {
@@ -246,7 +272,7 @@ export const projects = [
           "Conducted performance benchmarking across LSTM, BiLSTM and Stacked LSTM encoder variants, comparing precision, recall and inference latency to select the most effective model.",
           "Integrated Neptune.ai for real-time experiment tracking, hyperparameter logging and visualizing reconstruction loss."
         ],
-        tags: ["AIML", "FS", "ALL"],
+        tags: ["AIML", "ALL"],
         tech: [
             "https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue",
             "https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white",
@@ -323,7 +349,7 @@ export const projects = [
     {
         title: "An RPG Game: PokeReigns",
         desc: ["Developed an online role-playing game inspired by the popular anime Pokemon.", "Enables users to capture and train Pokemons through battles with wild Pokemons and/or other trainers", 
-              "Leveraged Google’s Firebase for managing authentication and storing users' data as it provides an identity platform and in-built UI libraries to authenticate the user in the application securely"
+              "Leveraged Google's Firebase for managing authentication and storing users' data as it provides an identity platform and in-built UI libraries to authenticate the user in the application securely"
         ],
         deployedLink: "https://pokereigns.web.app/",
         githubLink: "https://github.com/kira2406/PokeReigns",
