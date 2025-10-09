@@ -53,7 +53,7 @@ const LeftEventCard = ({heading, year, course, description, logo}) => {
             <div className='text-base md:text-xl font-righteous text-light-background text-right'>{heading}</div>
             <div className='text-base md:text-xl font-jura text-light-background text-right font-bold'>{year}</div>
             <div className='text-xl md:text-2xl font-jura text-lightblue text-right tracking-tighter leading-6'>{course}</div>
-            <div className='text-base md:text-xl font-jura text-light-background tracking-tight leading-6 text-justify'>{description}</div>
+            <div className='text-base md:text-xl font-jura text-light-background tracking-tight leading-6 text-right'>{description}</div>
         </div>
     </div>)
 }
