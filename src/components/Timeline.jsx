@@ -19,11 +19,6 @@ const Timeline = ({events}) => {
                         :
                         (<div></div>)}
                     <Pillar />
-                    {/* {event.direction == "right"?(
-                        <RightEventCard heading={event.heading} year={event.year} course={event.course} logo={event.logo} description={event.description}/>)
-                        :
-                        (<div></div>)
-                    } */}
                 </motion.div>
             </Fragment>
         ))}
@@ -58,16 +53,6 @@ const LeftEventCard = ({heading, year, course, description, logo}) => {
     </div>)
 }
 
-const RightEventCard = ({heading, year, course, description, logo}) => {
-    return (<div className='flex flex-row gap-x-2 p-2 items-start'>
-        <img src={logo} className='mx-auto h-16 rounded-lg'/>
-        <div className='flex flex-col'>
-            <div className='text-base md:text-xl font-righteous text-light-background '>{heading}</div>
-            <div className='text-base md:text-xl font-jura text-light-background font-bold'>{year}</div>
-            <div className='text-xl md:text-2xl font-jura text-lightblue tracking-tighter leading-6 '>{course}</div>
-            <div className='text-base md:text-xl font-jura text-light-background tracking-tight leading-6 text-right'>{description}</div>
-        </div>
-    </div>)
-}
+
 
 export default Timeline
