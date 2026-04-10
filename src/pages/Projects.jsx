@@ -13,10 +13,10 @@ const Projects = ({projects}) => {
   }, [selected])
   
   return (
-    <div id="projects" className="bg-light-background dark:bg-dark-primary">
+    <div id="projects" className="bg-light-background dark:bg-dark-background py-8">
       <div className="mx-4 md:mx-16 lg:mx-80 min-h-screen py-4 md:py-6 lg:py-8">
         <div className="flex gap-4 px-4 py-2 md:p-4">
-        <div className="border-l-[14px] border-light-secondary p-4 text-light-primary text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
+        <div className="border-l-[14px] border-light-secondary dark:border-dark-secondary p-4 text-light-primary dark:text-dark-primary text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
         PROJECTS
         </div>
         </div>

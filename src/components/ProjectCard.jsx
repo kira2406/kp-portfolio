@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
     {isLargeScreen ?
     
     <div
-  className="group self-start bg-light-background border border-light-secondary rounded-2xl p-5 md:p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+  className="group self-start bg-light-background dark:bg-dark-background border border-light-secondary dark:border-dark-secondary rounded-2xl p-5 md:p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
 >
   <div>
     <div className="grid grid-cols-[1fr_auto] md:grid-cols-[8fr_2fr] lg:grid-cols-[10fr_2fr] gap-3 mb-4">
@@ -64,7 +64,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex flex-wrap gap-3 items-center pt-4">
         {githubLink && (
           <button
-            className="flex items-center gap-2 bg-light-primary border border-light-secondary rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4 text-light-text"
+            className="flex items-center gap-2 bg-light-primary border border-light-secondary rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4 text-light-text hover:border-spacing-2 hover:border-dark-background hover:bg-light-secondary transition-all"
             onClick={() => handleURLClick(githubLink)}
           >
             <FaGithub />
@@ -74,7 +74,7 @@ const ProjectCard = ({ project }) => {
 
         {deployedLink && (
           <button
-            className="bg-light-primary border border-light-secondary text-light-text rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
+            className="bg-light-primary border border-light-secondary text-light-text hover:border-spacing-2 hover:border-dark-background hover:bg-light-secondary rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
             onClick={() => handleURLClick(deployedLink)}
           >
             OPEN APP
@@ -83,7 +83,7 @@ const ProjectCard = ({ project }) => {
 
         {viewDetailsBtn && (
           <button
-            className="bg-light-primary border border-light-secondary text-light-text rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
+            className="bg-light-primary border border-light-secondary text-light-text hover:border-spacing-2 hover:border-dark-background hover:bg-light-secondary rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
             onClick={() => handleURLClick(`/projects/${project?.viewDetails}`)}
           >
             View Details

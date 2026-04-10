@@ -34,11 +34,11 @@ const Tech = ({ skills }) => {
   return (
     <div
       id="skills"
-      className="dark:bg-dark-background bg-light-primary py-8"
+      className="dark:bg-dark-primary bg-light-primary py-8"
     >
       <div className="mx-4 md:mx-16 lg:mx-80 py-4 md:py-6 lg:py-8">
         <div className="flex gap-4 px-4 py-2 md:p-4">
-          <div className="border-l-[14px] border-light-secondary p-4 text-light-background dark:text-dark-text text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
+          <div className="border-l-[14px] border-light-secondary dark:border-dark-secondary p-4 text-light-background dark:text-dark-text text-3xl md:text-4xl lg:text-5xl font-righteous font-bold tracking-wider">
             SKILLS
           </div>
         </div>
