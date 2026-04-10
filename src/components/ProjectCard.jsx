@@ -37,53 +37,65 @@ const ProjectCard = ({ project }) => {
   return (<>
     {isLargeScreen ?
     
-    <motion.div
-    initial={{opacity:0, y:70}} 
-    whileInView={{opacity:1, y:0}} 
-    transition={{duration: 0.5}} 
-    viewport={{ once: true }}
-    className="bg-light-secondary p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_10fr] hover:shadow-xl hover:-translate-y-2 duration-300 rounded-xl transform transition-all">
-      {thumbnail ? <img src={thumbnail} className="mb-4 md:mb-0 pr-0 md:pr-4"/>: <div></div>}
-      <div>
-        <div className="grid grid-cols-[1fr_1fr] md:grid-cols-[8fr_2fr] lg:grid-cols-[10fr_2fr] mb-4 md:mb-0"><h1 className="text-light-background text-xl md:text-2xl font-righteous pb-4">
-          {title}
-        </h1>
-        {deployedLink && <button className="bg-light-red rounded-lg md:rounded-xl lg:rounded-xl font-jura text-sm md:text-base lg:text-lg py-2 px-" onClick={()=>handleURLClick(deployedLink)}>OPEN APP</button>}
-        {viewDetailsBtn && <button className="bg-light-red rounded-md md:rounded-xl lg:rounded-xl font-jura text-sm md:text-base lg:text-lg py-2 px-0 m-2" onClick={()=>handleURLClick(`/projects/${project?.viewDetails}`)}>View Details</button>}
-        </div>
-        {desc.map((content, key) => (
-          <p
-            key={key}
-            className="text-lg md:text-xl font-jura text-gray-200 text-justify"
+    <div
+  className="group self-start bg-light-background border border-light-secondary rounded-2xl p-5 md:p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+>
+  <div>
+    <div className="grid grid-cols-[1fr_auto] md:grid-cols-[8fr_2fr] lg:grid-cols-[10fr_2fr] gap-3 mb-4">
+      <h1 className="text-light-secondary text-xl md:text-2xl font-righteous pb-4">
+        {title}
+      </h1>
+
+
+    </div>
+
+    <div className="overflow-hidden max-h-32 group-hover:max-h-96 transition-all duration-500 ease-in-out">
+      {desc.map((content, key) => (
+        <p
+          key={key}
+          className="text-base md:text-lg font-jura text-dark-secondary leading-8 text-left mb-2"
+        >
+          {content}
+        </p>
+      ))}
+    </div>
+
+     {(githubLink || deployedLink || viewDetailsBtn) && (
+      <div className="flex flex-wrap gap-3 items-center pt-4">
+        {githubLink && (
+          <button
+            className="flex items-center gap-2 bg-light-primary border border-light-secondary rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4 text-light-text"
+            onClick={() => handleURLClick(githubLink)}
           >
-            {content}
-          </p>
-        ))}
-        {(githubLink || deployedLink) && (
-          <div
-            className="text-light-background flex flex-row items-center font-jura pt-2"
-            
-          >
-            <FaGithub className="mr-2" />
-            <span className="cursor-pointer hover:text-lightblue" onClick={() => handleURLClick(githubLink)}>{githubLink}</span>
-          </div>
+            <FaGithub />
+            GitHub
+          </button>
         )}
-        <div className="pt-4 flex flex-wrap">
-          {techs.map((tech, index) => 
-              <img
-                key={index}
-                src={tech}
-                alt={tech}
-                title={tech}
-                className="h-8 mr-2 mb-2"
-              />
-          )}
-        </div>
+
+        {deployedLink && (
+          <button
+            className="bg-light-primary border border-light-secondary text-light-text rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
+            onClick={() => handleURLClick(deployedLink)}
+          >
+            OPEN APP
+          </button>
+        )}
+
+        {viewDetailsBtn && (
+          <button
+            className="bg-light-primary border border-light-secondary text-light-text rounded-lg md:rounded-xl font-jura text-sm md:text-base py-2 px-4"
+            onClick={() => handleURLClick(`/projects/${project?.viewDetails}`)}
+          >
+            View Details
+          </button>
+        )}
       </div>
-    </motion.div>
+    )}
+
+  </div>
+</div>
     :
-    <div initial={{opacity:0, y:70}} whileInView={{opacity:1, y:0}} transition={{duration: 0.5}} className="bg-light-secondary p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_10fr] hover:shadow-xl hover:-translate-y-2 duration-300 rounded-xl transform transition-all">
-      {thumbnail ? <img src={thumbnail} className="mb-4 md:mb-0 pr-0 md:pr-4"/>: <div></div>}
+    <div className="bg-light-background p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_10fr] hover:shadow-xl hover:-translate-y-2 duration-300 rounded-xl transform transition-all border border-light-secondary">
       <div>
         <div className="grid grid-cols-[2fr_1fr] md:grid-cols-[8fr_2fr] lg:grid-cols-[10fr_2fr] mb-4 md:mb-0"><h1 className="text-light-background text-lg md:text-2xl font-righteous pb-4">
           {title}
@@ -108,13 +120,13 @@ const ProjectCard = ({ project }) => {
             <span className="cursor-pointer hover:text-lightblue" onClick={() => handleURLClick(githubLink)}>{githubLink}</span>
           </div>
         )}
-        <div className="pt-4 flex flex-wrap">
+        {/* <div className="pt-4 flex flex-wrap">
           {techs.map((tech, key) => (
             <span className="px-3 md:px-4 mr-2 md:mr-4 bg-lightblue rounded-lg md:rounded-xl font-jura text-sm md:text-base" key={key}>
               {tech}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
     }

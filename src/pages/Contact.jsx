@@ -15,7 +15,7 @@ import { SiHandshake, SiLeetcode } from "react-icons/si";
 const Contact = ({ handleResumeDownload }) => {
   const handleLinkedIn = () => {
     window.open(
-      "https://www.linkedin.com/in/kushwanth-p",
+      "https://www.linkedin.com/in/kushwanth-parameshwaraiah-425ab43ab/",
       "_blank"
     );
   };
@@ -27,7 +27,7 @@ const Contact = ({ handleResumeDownload }) => {
     window.open("https://leetcode.com/u/kira2402/", "_blank");
   };
   const handleInstagram = () => {
-    window.open("https://www.instagram.com/echoes_of_k/", "_blank");
+    window.open("https://www.instagram.com/echoes_of_kp/", "_blank");
   };
   const handleHandshake = () => {
     window.open(

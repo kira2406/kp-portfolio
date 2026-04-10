@@ -39,11 +39,11 @@ const Home = ({handleResumeDownload}) => {
                 <span className="text-light-primary dark:text-dark-primary">
                   Kush
                 </span>
-                <span className="text-light-gray dark:text-dark-gray">
+                <span className="text-light-secondary dark:text-dark-secondary">
                   wanth
                 </span>
               </motion.div>
-              <motion.div initial={{x:-50, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:2.5}} className="text-light-gray dark:text-dark-gray m-0 font-righteous text-3xl md:text-4xl lg:text-6xl font-bold tracking-normal md:tracking-wider">
+              <motion.div initial={{x:-50, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:0.5, delay:2.5}} className="text-light-secondary dark:text-dark-secondary m-0 font-righteous text-3xl md:text-4xl lg:text-6xl font-bold tracking-normal md:tracking-wider">
                 Parameshwaraiah
               </motion.div>
               <motion.div initial={{y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{duration:0.5, delay:3}} className="m-0 font-jura text-base md:text-2xl lg:text-3xl text-light-text dark:text-dark-text">

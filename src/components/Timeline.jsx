@@ -43,7 +43,13 @@ const Pillar = () => {
 
 const LeftEventCard = ({heading, year, course, description, logo}) => {
     return (<div className='flex flex-row-reverse gap-x-4 p-2 items-start'>
-        <img src={logo} className='mx-auto h-16 rounded-lg'/>
+        <div className="w-16 h-16 rounded-lg bg-white flex items-center justify-center overflow-hidden shrink-0">
+        <img
+          src={logo}
+          alt={heading}
+          className="w-full h-full object-contain p-1"
+        />
+      </div>
         <div className='flex flex-col items-end'>
             <div className='text-base md:text-xl font-righteous text-light-background text-right'>{heading}</div>
             <div className='text-base md:text-xl font-jura text-light-background text-right font-bold'>{year}</div>
